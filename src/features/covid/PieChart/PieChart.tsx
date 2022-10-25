@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
-import { Doughnut } from "react-chartjs-2";
+import { Doughnut, Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 import { selectDaily } from "../covidSlice";
@@ -36,6 +36,8 @@ const PieChart: React.FC = () => {
         ],
       }}
       options={{
+        circumference: 180,
+        rotation: -90,
         plugins: {
           legend: {
             position: "bottom",

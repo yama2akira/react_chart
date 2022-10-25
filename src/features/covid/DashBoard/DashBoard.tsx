@@ -67,14 +67,14 @@ const DashBoard: React.FC = () => {
             <SwitchCountry />
           </div>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={12}>
-              <Cards />
-            </Grid>
-            <Grid item xs={12} md={7}>
+            <Grid item xs={12} md={9}>
               <Chart />
             </Grid>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={3}>
               <PieChart />
+            </Grid>
+            <Grid item xs={12} md={12}>
+              <Cards />
             </Grid>
           </Grid>
         </Container>
